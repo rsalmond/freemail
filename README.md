@@ -24,12 +24,6 @@ Domains may only be a member of one list.
 
 ## Javascript
 
-### Install
-
-```
-npm install --save freemail
-```
-
 ```javascript
 freemail.isFree('smith@gmail.com');
 > true
