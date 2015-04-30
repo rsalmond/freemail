@@ -22,6 +22,9 @@ There are three key data files in this project:
 
 Domains may only be a member of one list.
 
+## Install
+PM> Install-Package freemail.js 
+
 ## Javascript
 
 ```javascript
