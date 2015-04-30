@@ -2,26 +2,26 @@
 
 set -e
 
-tmp=$(mktemp -t freemail)
+tmp=$(touch tempblacklist)
 cat ./data/blacklist.txt \
     | sed '/./,$!d' \
     | sed -e 's/^ *//' -e 's/ *$//' \
     | awk '{print tolower($0)}' \
     | sort \
-    | uniq > $tmp
-mv $tmp ./data/blacklist.txt
+    | uniq > '$tmp'
+mv '$tmp' ./data/blacklist.txt
 
-tmp=$(mktemp -t freemail)
+tmp=$(touch tempfree)
 cat ./data/free.txt \
     | sed '/./,$!d' \
     | sed -e 's/^ *//' -e 's/ *$//' \
     | awk '{print tolower($0)}' \
     | sort \
     | uniq \
-    | comm -23 - ./data/blacklist.txt > $tmp
-mv $tmp ./data/free.txt
+    | comm -23 - ./data/blacklist.txt > '$tmp'
+mv '$tmp' ./data/free.txt
 
-tmp=$(mktemp -t freemail)
+tmp=$(touch tempdisposable)
 cat ./data/disposable.txt \
     | sed '/./,$!d' \
     | sed -e 's/^ *//' -e 's/ *$//' \
@@ -29,16 +29,16 @@ cat ./data/disposable.txt \
     | sort \
     | uniq \
     | comm -23 - ./data/blacklist.txt \
-    | comm -23 - ./data/free.txt > $tmp
-mv $tmp ./data/disposable.txt
+    | comm -23 - ./data/free.txt > '$tmp'
+mv '$tmp' ./data/disposable.txt
 
 sources=$(cat ./data/sources.txt)
-new=$(mktemp -t freemail)
+new=$(touch tempnew)
 for source in $sources; do
     echo "$(curl --silent $source)" >> $new
 done;
 
-tmp=$(mktemp -t freemail)
+tmp=$(touch tempall)
 cat $new \
     | sed '/./,$!d' \
     | sed -e 's/^ *//' -e 's/ *$//' \
@@ -47,9 +47,9 @@ cat $new \
     | uniq \
     | comm -23 - ./data/blacklist.txt \
     | comm -23 - ./data/free.txt \
-    | comm -23 - ./data/disposable.txt > $tmp
+    | comm -23 - ./data/disposable.txt > '$tmp'
 
-confirmed=$(mktemp -t freemail)
+confirmed=$(touch tempconfirmed)
 for domain in $(cat $tmp); do
     result=`dig +short mx $domain`
     if [ -n "$result" ]; then
@@ -57,10 +57,11 @@ for domain in $(cat $tmp); do
     fi
 done
 
-tmp=$(mktemp -t freemail)
+tmp=$(touch tempfreemail)
 cat $confirmed ./data/free.txt \
     | sort \
-    | uniq > $tmp
-mv $tmp ./data/free.txt
+    | uniq > '$tmp'
+mv '$tmp' ./data/free.txt
 
 echo 'Complete!'
+read
