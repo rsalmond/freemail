@@ -22,6 +22,13 @@ There are three key data files in this project:
 
 Domains may only be a member of one list.
 
+## Updating the database
+
+Run `./update` to pull in the latest domains from the sources listed in
+`sources.txt`. All new domains will be placed in `free.txt` by default.
+If any domains provide disposable email service, they may be moved to
+`disposable.txt`.
+
 ## Install
 PM> Install-Package freemail.js 
 
