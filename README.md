@@ -3,9 +3,9 @@
 # freemail
 
 A database of free and [disposable](http://en.wikipedia.org/wiki/Disposable_email_address)
-email domains and a handy Node.js module for querying it.
+email domains and a handy javascript module for querying it.
 
-Use the Node.js module or access the files in the `./data` directory and parse
+Use the javascript module or access the files in the `./data` directory and parse
 with your language of choice.
 
 In an effort to create the most up-to-date list of domains, the database can be
@@ -22,23 +22,9 @@ There are three key data files in this project:
 
 Domains may only be a member of one list.
 
-## Updating the database
-
-Run `./update` to pull in the latest domains from the sources listed in
-`sources.txt`. All new domains will be placed in `free.txt` by default.
-If any domains provide disposable email service, they may be moved to
-`disposable.txt`.
-
-## Node
-
-### Install
-
-```
-npm install --save freemail
-```
+## Javascript
 
 ```javascript
-var freemail = require('freemail');
 freemail.isFree('smith@gmail.com');
 > true
 freemail.isFree('jack@mailinater.com');
