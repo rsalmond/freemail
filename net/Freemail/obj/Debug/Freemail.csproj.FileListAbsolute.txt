@@ -1,0 +1,12 @@
+D:\Projects\OpenSource\freemail\src\Freemail\bin\Debug\Freemail.dll
+D:\Projects\OpenSource\freemail\src\Freemail\bin\Debug\Freemail.pdb
+D:\Projects\OpenSource\freemail\src\Freemail\obj\Debug\Freemail.dll
+D:\Projects\OpenSource\freemail\src\Freemail\obj\Debug\Freemail.pdb
+D:\Projects\OpenSource\freemail\src\Freemail\bin\Debug\data\disposable.txt
+D:\Projects\OpenSource\freemail\src\Freemail\bin\Debug\data\free.txt
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\data\disposable.txt
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\data\free.txt
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\Freemail.dll
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\Freemail.pdb
+D:\Projects\OpenSource\freemail\net\Freemail\obj\Debug\Freemail.dll
+D:\Projects\OpenSource\freemail\net\Freemail\obj\Debug\Freemail.pdb
