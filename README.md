@@ -3,10 +3,9 @@
 # freemail
 
 A database of free and [disposable](http://en.wikipedia.org/wiki/Disposable_email_address)
-email domains and a handy javascript module for querying it.
+email domains with a handy javascript module and .net library for querying it.
 
-Use the javascript module or access the files in the `./data` directory and parse
-with your language of choice.
+Use the javascript module for client side queries, or the .net library for server side queries.
 
 In an effort to create the most up-to-date list of domains, the database can be
 synchronized with various lists from around the web. You can also add new
@@ -30,9 +29,11 @@ If any domains provide disposable email service, they may be moved to
 `disposable.txt`.
 
 ## Install
-PM> Install-Package freemail.js 
+There are two available nuget packages:
+- PM> Install-Package freemail.js (client side javascript implementation)
+- PM> Install-Package freemail.net (server side .net implementation)
 
-## Javascript
+## Javascript Example
 
 ```javascript
 freemail.isFree('smith@gmail.com');
@@ -42,6 +43,20 @@ freemail.isFree('jack@mailinater.com');
 freemail.isDisposable('smith@gmail.com');
 > false
 freemail.isDisposable('jack@mailinater.com');
+> true
+
+```
+
+## CSharp Example
+
+```
+Freemail.Queries.IsFree('smith@gmail.com');
+> true
+Freemail.Queries.IsFree('jack@mailinater.com');
+> true
+Freemail.Queries.IsDisposable('smith@gmail.com');
+> false
+Freemail.Queries.IsDisposable('jack@mailinater.com');
 > true
 
 ```
