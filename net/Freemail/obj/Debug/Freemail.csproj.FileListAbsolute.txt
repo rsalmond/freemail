@@ -8,5 +8,5 @@ D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\Freemail.dll
 D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\Freemail.pdb
 D:\Projects\OpenSource\freemail\net\Freemail\obj\Debug\Freemail.dll
 D:\Projects\OpenSource\freemail\net\Freemail\obj\Debug\Freemail.pdb
-D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\freemail\disposable.txt
-D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\freemail\free.txt
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\disposable.txt
+D:\Projects\OpenSource\freemail\net\Freemail\bin\Debug\free.txt

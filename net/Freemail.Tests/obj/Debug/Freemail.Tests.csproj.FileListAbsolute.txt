@@ -6,6 +6,6 @@ D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\nunit.framework.xml
 D:\Projects\OpenSource\freemail\net\Freemail.Tests\obj\Debug\Freemail.Tests.csprojResolveAssemblyReference.cache
 D:\Projects\OpenSource\freemail\net\Freemail.Tests\obj\Debug\Freemail.Tests.dll
 D:\Projects\OpenSource\freemail\net\Freemail.Tests\obj\Debug\Freemail.Tests.pdb
-D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\freemail\disposable.txt
-D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\freemail\free.txt
+D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\disposable.txt
+D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\free.txt
 D:\Projects\OpenSource\freemail\net\Freemail.Tests\bin\Debug\Freemail.pdb

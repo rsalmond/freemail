@@ -50,6 +50,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Freemail\Freemail.csproj">
       <Project>{c3bf8c56-626e-47f5-8621-5a342414f767}</Project>
       <Name>Freemail</Name>
