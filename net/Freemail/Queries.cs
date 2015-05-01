@@ -13,11 +13,11 @@ namespace Freemail
 		
 		static Queries()
 		{
-			var freePath = Environment.CurrentDirectory + "\\data\\free.txt";
+			var freePath = Environment.CurrentDirectory + "\\freemail\\free.txt";
 			var freeContents = File.ReadAllText(freePath);
 			FreeDomains = Regex.Split(freeContents, "\r\n").ToList();
 			
-			var disposablePath = Environment.CurrentDirectory + "\\data\\disposable.txt";
+			var disposablePath = Environment.CurrentDirectory + "\\freemail\\disposable.txt";
 			var disposableContents = File.ReadAllText(disposablePath);
 			DisposableDomains = Regex.Split(disposableContents, "\r\n").ToList();
 			FreeDomains.AddRange(DisposableDomains);
