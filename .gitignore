@@ -245,6 +245,9 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+#python cruft
+*.pyc
+
     Status API Training Shop Blog About 
 
     © 2015 GitHub, Inc. Terms Privacy Security Contact 
